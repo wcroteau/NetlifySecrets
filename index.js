@@ -8,7 +8,7 @@ async function handleButtonClick() {
 
   secretEl.innerHTML = `
     <h2>Message: ${data.message}</h2>
-    <h2>Secret: ${data.secret}</h2>
+    <h2>Secret: ${data.mySecret}</h2>
   `;
 }
 
