@@ -4,7 +4,7 @@
   "description": "",
   "main": "api.js",
   "scripts": {
-    "start": "node --env-file=.env api.js",
+    "start": "node --env-file=.env ./netlify/functions/api.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
