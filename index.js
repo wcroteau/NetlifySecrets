@@ -3,11 +3,13 @@ const secretEl = document.querySelector("#secret_container");
 
 async function handleButtonClick() {
   const res = await fetch("/api/secret");
-  console.log(res);
   const data = await res.json();
   console.log(data);
 
-  secretEl.innerHTML = `<h2>slartibartfast: ${data}</h2>`;
+  secretEl.innerHTML = `
+    <h2>Message: ${data.message}</h2>
+    <h2>Secret: ${data.secret}</h2>
+  `;
 }
 
 buttonEl.addEventListener("click", handleButtonClick);
